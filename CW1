@@ -1,0 +1,14 @@
+void countDown(int num) {
+    if (num == 0) // test
+        System.out.println("Blastoff!");
+    else {
+        if (num % 2 == 0) // check if num is even
+            System.out.println(num);
+        countDown(num - 1); // recursive call
+    }
+}
+
+/* O(n) is the time complexity it is linear
+/* n is the value of num
+/* countDown function is called recursively it is called num times
+/* each time num is reduced by 1 unitl it becomes 0 
