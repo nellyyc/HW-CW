@@ -1,0 +1,20 @@
+/* Nallely Cruz */
+
+public class RecursiveHelloWorld {
+    public static void main(String[] args) {
+        // print "Hello World" 6 times using the recursive method
+        printHelloWorldNTimes(6);
+    }
+
+    // the recursive method
+    public static void printHelloWorldNTimes(int n) {
+        if (n > 0) {
+            // print "Hello World" once
+            System.out.println("Hello World");
+
+            // now print "Hello World" (n-1) times
+            printHelloWorldNTimes(n - 1);
+        }
+        // if n is 0 or less, do nothing
+    }
+}
