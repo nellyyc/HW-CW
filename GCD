@@ -1,0 +1,11 @@
+int gcd(int x, int y) {
+    if (x == y) // base case
+        return x;
+    else if (x > y)
+        return gcd(x - y, y); // subtract y from x
+    else
+        return gcd(x, y - x); // subtract x from y
+}
+
+/* updated version using subtraction instead of %
+/* the original version of the code had the output of GDC: 6
