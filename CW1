@@ -7,7 +7,7 @@ void countDown(int num) {
         countDown(num - 1); // recursive call
     }
 }
-
+/* prints Blastoff! once num reaches 0
 /* O(n) is the time complexity it is linear
 /* n is the value of num
 /* countDown function is called recursively it is called num times
